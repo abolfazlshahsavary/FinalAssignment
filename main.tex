@@ -80,6 +80,26 @@ One of the challenges that I faced in this way was the creation of tags, which m
 
 \subsection{Opening the file using Zathura}
 \paragraph{to open selected file usinf zathura we can use this command \texttt{fd -t pdf -E '.*' | fzf \&\& zathura (\$cat-)}  I explane any part of commands above instead of \texttt{cat-} this command is used to pass stdin to zathura to open and load your selected file}
+\section{Git and FOSS}
+\subsection{README.md}
+\paragraph{One of the new things that I have come to know is github action git hub action is able to do some commands automatically this repository can compile your latex file to pdf by using of github action in this repository we use tags to identify the latex file . To work with this repository, you just need to add your latex file and create a special tag for your changes and push it to the repository if you want to use this repository follow these steps:}
+\begin{enumerate}
+    \item fork the repository 
+    \item clone it on your machine 
+    \item add your latex file to the repository
+    \item change the main.yml file to be able to compile your latex file (chnage some thing that are realate to your latex file not the operation) 
+    \item create tag for any change in your latex file 
+    \item push the tags 
+    \item after workflowing your latex file will be released in release section 
+    \item 8.after any change following above steps from number 5
+
+\end{enumerate}
+subsection{Issues}
+\begin{figure}[b]
+    \centerline{\includegraphics[width=4in, height=2in]{issue.png}}
+    \caption{This is my issue.}
+    \label{fig}
+\end{figure}
 
 
 
