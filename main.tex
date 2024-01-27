@@ -74,15 +74,12 @@ One of the challenges that I faced in this way was the creation of tags, which m
 \paragraph{Install fzf on your machine and give a description of what the following command does: \texttt{ls | fzf}}
 \paragraph{This command makes it easier to navigate and select files and directories, the ls command is used to list all the files and directories in a directory, and with fzf you can do a fuzzy search through your file and the directory is listed.}
 \subsection{Using fzf to find your favorite PDF}
-\paragraph{You might have came across moments when you want to open up a certain PDF when
-studying for your final exams but finding the directory of that PDF is a very gruesome
-and tiring process. In this section, we will be using fzf to find our PDF in seconds! We
-will be going step by step on how to find your file and use fzf to select it?}
+\paragraph{You might have came across moments when you want to open up a certain PDF when studying for your final exams but finding the directory of that PDF is a very gruesome and tiring process. In this section, we will be using fzf to find our PDF in seconds! We will be going step by step on how to find your file and use fzf to select it?}
 \paragraph{first of all we have to install fd then we can use this command to list all pdf file in that repository \texttt{fd -e pdf} but there is problem here this command list all the pdf file in that repository the better command is \texttt{fd -t -e pdf} that can list all pdf file from that repository and any subrepository }
 \paragraph{after listing the pdf file we know the name of pdf that we want to select and we use this command to select it \texttt{fd -t pdf -E '.*' <file_name> | fzf} in this commands \texttt{-t} is for  recursively search \texttt{-E '.*'} is use to refer pdf file and fzf select it}
 
 \subsection{Opening the file using Zathura}
-\paragraph{to open selected file usinf zathura we can use this command \texttt{fd -t pdf -E '.*' | fzf && zathura \"$(cat -)\"} I explane any part of commands above instead of \texttt{cat-}this command is used to pass stdin to zathura to open and load your selected file}
+\paragraph{to open selected file usinf zathura we can use this command I explane any part of commands above instead of \texttt{cat-}this command is used to pass stdin to zathura to open and load your selected file}
 
 
 
