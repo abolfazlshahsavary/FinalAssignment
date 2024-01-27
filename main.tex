@@ -82,7 +82,7 @@ will be going step by step on how to find your file and use fzf to select it?}
 \paragraph{after listing the pdf file we know the name of pdf that we want to select and we use this command to select it \texttt{fd -t pdf -E '.*' <file_name> | fzf} in this commands \texttt{-t} is for  recursively search \texttt{-E '.*'} is use to refer pdf file and fzf select it}
 
 \subsection{Opening the file using Zathura}
-\paragraph{to open selected file usinf zathura we can use this command \texttt{fd -t pdf -E '.*' | fzf && zathura "$(cat -)"} I explane any part of commands above instead of \texttt{cat-}this command is used to pass stdin to zathura to open and load your selected file}
+\paragraph{to open selected file usinf zathura we can use this command \texttt{fd -t pdf -E '.*' | fzf && zathura \"$(cat -)\"} I explane any part of commands above instead of \texttt{cat-}this command is used to pass stdin to zathura to open and load your selected file}
 
 
 
